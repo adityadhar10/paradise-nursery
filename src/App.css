@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root{font-family:'DM Sans',sans-serif;color:#243b2c;background:#f8faf6;font-synthesis:none}
+*{box-sizing:border-box}
+body{margin:0}
+button{background:#245c3c;color:white;border:0;border-radius:8px;padding:11px 17px;font-weight:600;cursor:pointer}
+button:hover{background:#19452c}
+button:disabled{background:#a4b5a7;cursor:not-allowed}
+button.secondary{background:#e8efe7;color:#245c3c;margin-left:8px}
+.navbar{position:sticky;top:0;z-index:2;background:#fff;padding:16px 6%;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 12px #172e1710}
+.navbar strong{font-size:20px;cursor:pointer;color:#245c3c}
+.navbar button{margin-left:8px}
+.hero{min-height:85vh;display:flex;align-items:center;padding:8%;background:linear-gradient(90deg,#10291be8,#10291b30),url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1800&q=85') center/cover;color:white}
+.hero-content{max-width:600px}
+.hero h1{font:700 clamp(42px,7vw,76px) 'Playfair Display',serif;margin:12px 0}
+.hero p{font-size:18px;line-height:1.7}
+.eyebrow{letter-spacing:3px;font-size:12px!important}
+.products,.cart,.about{max-width:1200px;margin:auto;padding:36px 24px}
+h1,h2{font-family:'Playfair Display',serif}
+.products>h1,.cart>h1{font-size:36px;margin-bottom:6px}
+.subtitle{color:#6b7b6c;margin-bottom:35px}
+.products section{margin:35px 0}
+.products section h2{margin-bottom:18px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.plant{background:white;border-radius:14px;overflow:hidden;padding-bottom:18px;box-shadow:0 4px 20px #1e42200d}
+.plant img{width:100%;height:200px;object-fit:cover}
+.plant h3,.plant p,.plant button{margin-left:16px;margin-right:16px}
+.plant p{font-weight:700;color:#245c3c}
+.cart-row{display:flex;gap:20px;padding:20px 0;border-bottom:1px solid #dfe7dd}
+.cart-row img{width:135px;height:125px;object-fit:cover;border-radius:10px}
+.cart-details h3{margin-top:0}
+.quantity{display:flex;align-items:center;gap:12px}
+.quantity button{padding:7px 13px}
+.quantity .delete{background:#f8e9e7;color:#a32d24}
+.cart-actions{margin:24px 0}
+.about{min-height:60vh;line-height:1.8}
+footer{text-align:center;padding:24px;color:#728074;font-size:13px}
+@media(max-width:700px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.plant img{height:150px}.navbar{padding:14px;gap:10px}.navbar strong{font-size:15px}.navbar button{padding:9px;margin-left:3px}.cart-row img{width:95px;height:100px}.hero{min-height:75vh}}
+@media(max-width:430px){.grid{grid-template-columns:1fr}.plant img{height:220px}.navbar{align-items:flex-start;flex-direction:column}.navbar button{margin-left:0;margin-right:5px}}
